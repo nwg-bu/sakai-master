@@ -11,8 +11,7 @@ pipeline {
       steps {
         sh '''echo PATH = ${PATH}
 echo M2_HOME = ${M2_HOME}
-mvn clean
-git config core.longpaths true'''
+mvn clean'''
       }
     }
     stage('Build') {
